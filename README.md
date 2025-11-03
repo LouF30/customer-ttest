@@ -630,7 +630,12 @@ By adopting these practices, you will transition from simply using Kubernetes to
 
 
 
-
+| Característica | **Modelo Actual (GKE Standard + Rancher)** | **Nuevo Modelo (GKE Enterprise Autopilot)** |
+| :--- | :--- | :--- |
+| **Gestión de Nodos** | **Manual:** Hay que aprovisionar, escalar y actualizar los servidores (nodos) manualmente. | **Totalmente Gestionado:** Google se encarga de todo. No te preocupas por los nodos. |
+| **Facturación (Costos)** | **Por Nodo:** Pagas por la máquina virtual completa (ej. `e2-standard-4`) 24/7, sin importar si la usas al 100%. | **Por Pod:** Pagas solo por los recursos de CPU y memoria que tus aplicaciones solicitan. Mucho más eficiente. |
+| **Administración**| **Centralizada con Rancher:** Usas la interfaz de Rancher para gestionar los clústeres. | **Nativa con "Fleet Management":** Usas la consola de Google Cloud para una gestión unificada y centralizada. |
+| **Carga Operacional** | **Alta:** El equipo debe gestionar el servidor de Rancher, los nodos, parches y la planificación de capacidad. | **Baja:** El equipo se enfoca en las aplicaciones. Google se encarga de la infraestructura. |
 
 
 
